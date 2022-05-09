@@ -1,0 +1,387 @@
+<!doctype html 5>
+
+
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Routing Protocols</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <!-- <link href="css/impress-common.css" rel="stylesheet" /> -->
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported" style="background-color: rgb(253, 251, 251);">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress"
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    >
+
+    <div id="bored" class="step" data-x="-1000" data-y="-1500">
+        <img src="images/FVNET96021A-svg.svg" width="100%">
+    </div>
+
+    <!--
+        
+        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+        
+        So in the example below it'll be `step-2`.
+        
+        The hash part of the url when this step is active will be `#/step-2`.
+        
+        You can also use `#step-2` in a link, to point directly to this particular step.
+        
+        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
+        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
+        
+    -->
+    <div class="step slide" data-x="0" data-y="-1500" dir="rtl">
+        <h1 style="font-weight:bold;">انواع مسیریابی یا Routing  </h1>
+        <p>
+           <SPAN style="color: 025a77; font-weight: bold;"> Static Routing</SPAN> : این مسیریابی براساس مسیرهایی که به صورت دستی رو روتر ایجاد شده است صورت می گیرد. این روش در شبکه های کوچک قابل اجرا است زیرا با بزرگ شدن شبکه ایجاد تغییرات و اشکال یابی بسیار پیچیده و مشکل می شود.
+        </p>
+        <p>
+            <SPAN style="color: 025a77; font-weight: bold;">Dynamic Routing</SPAN> : در این روش مسیرها به صورت پویا توسط اطلاعاتی که روتر ها در اختیار هم می گذارند مشخص می شوند و دیگر نیاز به وارد کردن دستی مسیر ها نیست در این روش اعمال تغییرات بسیار ساده و اشکال یابی به راحتی میسر است . این تبادل اطلاعات توسط پروتکل های تحت عنوان Routing Protocol انجام می شود.
+        </p>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500" dir="rtl">
+        <img src="images/ip.png" alt="" style="width: 80%;">
+        <h1 style="font-weight:bold">Routing Protocol </h1>
+        <p>  
+            Routing Protocol ها مشخص می کنند که روترها به چه صورت با یکدیگر ارتباط برقرار کنند،<br> چگونه اطلاعت در مورد زیر ساخت شبکه را بین روتر ها منتقل کنند و بهترین مسیر را چگونه انتخاب کنند.
+        </p>
+    </div>
+
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to its correct size.
+        
+    -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" style="direction: rtl; font-family: 'irsans2'; line-height: 40px;" dir="rtl">
+        <h1 style="font-size: .6em; font-weight: bold;color: #025a77;">انواع پروتکل مسیریابی | Routing Protocol</h1><br>
+        <p style="font-size: 20px; color: #000;"><span style="font-weight:bold;color: #025a77;">Interior Gateway Protocol-IGP:</span> این دسته شامل پروتکل هایی است که در یک (AS (Autonomous System عمل می کنند. مانند EIGRP ، OSPF ، RIP</p>
+        <p style="font-size: 20px; color: #000;"><span style="font-weight:bold;color: #025a77;">Exterior Gateway Protocol-EGP:</span> این دسته شامل پروتکل هایی که جهت مسیربایی بین ASها مورد استفاده واقع می شوند. مانند BGP که پروتکل مسیریابی اینترنت است.</p>
+
+    </div>
+
+    <!--
+        
+        This element introduces rotation.
+        
+        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
+        element should be rotated by 90 degrees clockwise.
+        
+    -->
+    <div  class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="4" style="text-shadow: none; text-align: right;font-family: 'irsans2';" dir="rtl">
+        <img src="images/AerodynamicsofRouting_DynamicRouting.jpg" alt="">
+    </div>
+
+
+
+    <!--
+        
+        And now it gets really exciting! We move into third dimension!
+        
+        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
+        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
+        positioned far away from us (by 3000px).
+        
+    -->
+  
+
+    <!--
+        
+        This step here doesn't introduce anything new when it comes to data attributes, but you
+        should notice in the demo that some words of this text are being animated.
+        It's a very basic CSS transition that is applied to the elements when this step element is
+        reached.
+        
+        At the very beginning of the presentation all step elements are given the class of `future`.
+        It means that they haven't been visited yet.
+        
+        When the presentation moves to given step `future` is changed to `present` class name.
+        That's how animation on this step works - text moves when the step has `present` class.
+        
+        Finally when the step is left the `present` class is removed from the element and `past`
+        class is added.
+        
+        So basically every step element has one of three classes: `future`, `present` and `past`.
+        Only one current step has the `present` class.
+        
+        Note: data-x/y/z attributes, if not defined, by default will inherit the value of the 
+        previous step. So to get back to 0 on the z-axis, we must set it to 0.
+        See src/plugins/rel/README.md for more information.
+        
+    -->
+    <div id="mazaya" class="step" data-x="4500" data-y="-900" data-z="0" data-rotate="270" data-scale="6" style="list-style-type: none; text-align: right; font-family: 'irsans2';" dir="rtl">
+        <img src="images/What-is-EIGRP.jpg.jpg" alt="" style="width:100%; border-radius: 6px;">
+    </div>
+
+
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2" style="font-family: 'irsans2'; text-align: right;" dir="rtl">
+        <h1 style="font-weight: bold; font-size: .5em;margin: 1em 0em;"> EIGRP چیست؟</h1>
+        <p style="font-size: .35em; line-height: 30px;">
+            پروتکل EIGRP مخفف عبارت Enhanced Interior Gateway Routing Protocol است. این پروتکل در حقیقت نسخه‌ی پیشرفته‌ی پروتکل IGRP است. EIGRP یک پروتکل مسیریابی هیبرید بوده که توسط سیستم‌های سیسکو فراهم شده و در اکثر پروتکل‌های شبکه‌ای شرکت سیسکو مورد استفاده قرار می‌گیرد.
+        </p>
+        <h1 style="font-weight: bold; font-size: .5em;margin: 1em 0em;"> جداول EIGRP </h1>
+        <P>سه نوع جدول وجود دارد که توسط EIGRP استفاده می شود:</P>
+    </div>
+
+    <!--
+        
+        And the last one shows full power and flexibility of impress.js.
+        
+        You can not only position element in 3D, but also rotate it around any axis.
+        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
+        10 degrees (clockwise) around Y axis.
+        
+        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+        as `data-rotate` (these two are basically aliases).
+        
+    -->
+    <div dir="rtl" id="its-in-3d" class="step" data-x="6200" data-y="5300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2" style="padding: 0%; text-align: right; font-family: 'irsans2';">
+        <h1 style="font-weight: bold; font-size: .5em;margin: 1em 0em; color: #025a77;"> Neighbor Table  </h1>
+        <P>هر روتر دارای یک جدول همسایه است که اطلاعات مربوط به روترهای مجاور خود (همسایگان) را ذخیره می کند. اطلاعات جدول همسایه اصلی شامل زمان سنج پروتکل و شماره دنباله است.</P>
+        <h1 style="font-weight: bold; font-size: .5em;margin: 1em 0em; color: #025a77;">Topology Table</h1>
+        <P>اطلاعات مربوط به تمام شبکه های مقصد گزارش شده توسط همسایگان در این جدول ذخیره می شود. هر شناسه شبکه (مقصد) ممکن است چندین مسیر (توپولوژی یا مسیر) داشته باشد و بهترین مسیر با هزینه متریک تعیین می شود. هر مسیری معیارهای خاص خود را دارد.</P>
+        <h1 style="font-weight: bold; font-size: .5em;margin: 1em 0em; color: #025a77;">Routing Table</h1>
+        <P>اولین و دومین مسیر برتر برای هر مسیر در این جدول مسیریابی ذخیره می شود. بهترین مسیر به عنوان جانشین (successor) و بهترین مسیر بعدی (feasible successor) به عنوان جانشین امکان پذیر نامیده می شود.</P>
+    </div>
+
+    <!--
+        
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+
+
+
+
+    <div  class="step" data-x="7500" data-y="6500" style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <h1 style="margin: .7em 0;font-weight: bold;color: #025a77;">  ویژگی‌ های پروتکل EIGRP </h1>
+            <ol style="list-style-type: circle;">
+                <li>پروتکل‌های IP، IPX، Decnet و Appletalk را مسیریابی می‌کند.</li>
+                <li>اطلاع‌رسانی مسیریابی: فقط زمانی که تغییر مسیر اتفاق بیفتد.</li>
+                <li>تعداد هاپ: ۲۵۵</li>
+                <li>خلاصه‌سازی در Network Class Address یا Subnet Boundary</li>
+                <li>تقسیم افقی</li>
+            </ol>
+
+    </div>
+
+    <div  class="step" data-x="9000" data-y="6500" style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <img src="images/What-is-OSPF.jpg" alt="" style="border-radius: 6px;">
+    </div>
+
+
+    <div  class="step" data-x="11000" data-y="6500" style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <img src="images/44.png" alt="" style="width: 100%;">
+        <h1 style="color: #025a77;font-weight:bold">پروتکل OSPF</h1>
+        <p style="font-size:.65em;line-height: 35px;">OSFP مخفف عبارت Open Shortest Path First بوده و یک پروتکل Link State است. این پروتکل برای مسیریابی IP شبکه‌های گسترده استفاده می‌شود. پروتکل Link State یک اطلاعیه برای تمام همسایگان متصل در یک ناحیه می‌فرستد. هر روتر OSPF که فعال شود، یک بسته‌ با نام Hello به تمام روترهای دیگر ارسال می‌کند.
+        </p>
+        <p style="font-size:.65em;line-height: 35px;">بسته‌ی Hello حاوی اطلاعاتی نظیر تایمرهای روتر، ID روتر و Subnet mask است. چنانچه روترهای دیگر این اطلاعات را تائید کنند، آنگاه روتر جدید وارد سیستم می‌شود. روترهای همسایه با تغییر پایگاه داده‌ی link state یک مجاورت یا adjacency ایجاد می‌کنند</p>
+    </div>
+
+
+    <div  class="step" data-x="11000" data-y="7500" data-scale="2" data-rotate="45" style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <h1 style="color: #025a77;font-weight:bold">ویژگی ‌های پروتکل OSPF </h1>
+        <ol style="list-style-type: circle ;">
+            <li>یک پروتکل Link State است.</li>
+            <li>قابلیت مسیریابی IP</li>
+            <li>اطلاع‌رسانی مسیریابی: فقط زمانی که تغییر مسیر اتفاق بیفتد.</li>
+            <li>تعداد هاپ: هیچ (محدود شده توسط شبکه)</li>
+            <li>خلاصه‌سازی در Network Class Address یا Subnet Boundary</li>
+        </ol>
+    </div>
+
+
+    <div  class="step" data-x="11000" data-y="9500" data-z="2" style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <img src="images/bgp.png" alt="" style="width: 80%;">
+        <h1 style="color: #025a77;font-weight:bold">پروتکل BGP</h1>
+        <p style="font-size:.65em;line-height: 35px;">پروتکل BGP مخفف عبارت Border Gateway Protocol است. BGP یک پروتکل Exterior gateway بوده که با پروتکل‌های interior gateway کاملاً متفاوت است. این تمایز بسیار مهم است چون سیستم‌های مستقل باید از پروتکل‌های دیگری مانند EIGRP استفاده کنند. پروتکل‌های Exterior gateway مانند BGP سیستم‌های مستقلی را مسیریابی می‌کنند که یک AS ویژه به آن‌ها اختصاص داده‌شده است. </p>
+        <p style="font-size:.65em;line-height: 35px;">شماره‌های AS می‌توانند به یک موقعیت با یک یا چند روتر BGP اختصاص یابند. جدول مسیریابی BGP از IP آدرس‌های مقصد، مسیر AS برای رسیدن به مقصد و آدرس هاپ روتر بعدی تشکیل شده است. مسیر AS مجموعه‌ای از شماره‌های AS است که بسته‌های مسیریابی هر موقعیت را نشان می‌دهد ( برخلاف EIGRP که از سیستم‌های مستقل هم استفاده می‌کند).</p>
+    </div>
+
+    <div  class="step" data-x="12000" data-y="9500"  style="font-family: 'irsans2'; text-align: right;font-size: 1.5em;" dir="rtl">
+        <h1 style="color: #025a77;font-weight:bold">ویژگی ‌های پروتکل BGP </h1>
+        <ol style="list-style-type: circle ; font-size: .75em; line-height: 35px;">
+            <li>از ویژگی های اصلی BGP می‌توان به مقایسه کننده آن یا (Scalability)  می توان اشاره کرد.</li>
+            <li>این پروتکل در مقایسه با پروتکل‌های دیگری همچون OSPF و EIGRP که برای تعداد روترها در یک Area محدودیت داشته باشد، به علت عدم نیاز به ارتباط مستقیم دو روتر در شبکه ها، دارای این محدودیت نیست.</li>
+            <li>راه هایی که از طریق BGP پیدا می شوند دارای ویژگی‌های مرتبط به یکدیگر هستند که برای تعیین بهترین مسیر به یک مقصد، زمانی که چندین راه رو به یک مقصد خاص وجود داشته باشد، مورد استفاده قرار می‌گیرند.</li>
+            <li>این ویژگی‌ها Attributeهای BGP نامیده می‌شوند و  چگونگی تاثیرAttributeهای BGP در انتخاب مسیر برای طراحی شبکه‌های قدرتمند مورد نیاز است.</li>
+            <li>این Attributeها را که BGP برای فرایند انتخاب Route از آن‌ها استفاده می‌کند.</li>
+        </ol>
+    </div>
+
+
+
+    <div  class="step" data-x="12000" data-y="11000" style="font-family: 'irsans2'; text-align: center;font-size: 1.5em;">
+        <img src="images/arm.png" alt="" style="width: 3em; margin: 1em 0;">
+        <h1 style="font-weight: bold; color: #00BEFB; margin: 1em 0;">پروتکلهای مسیریابی</h1>
+        <p>BGP-EIGRP-OSPF</h><br><br>
+        <h1 style="font-weight: bold; color: #333;">استاد : دکتر قمی</h1><br>
+        <h1 style="color: #333; font-size: .7em; font-weight: bold;">کورش الکایی</h1>
+
+        <h4 style="color: #333; margin: 2em 0; font-size: .6em;">بهار 1401</h1>
+    </div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    This is a UI plugin. You can read more about plugins in src/plugins/README.md.
+    For now, I'll just tell you that this adds some graphical controls to navigate the
+    presentation. In the CSS file you can style them as you want. We've put them bottom right.
+-->
+<div id="impress-toolbar"></div>
+
+<!--
+    
+    Hint is not related to impress.js in any way.
+    
+    But it can show you how to use impress.js features in creative way.
+    
+    When the presentation step is shown (selected) its element gets the class of "active" and the body element
+    gets the class based on active step id `impress-on-ID` (where ID is the step's id)... It may not be
+    so clear because of all these "ids" in previous sentence, so for example when the first step (the one with
+    the id of `bored`) is active, body element gets a class of `impress-on-bored`.
+    
+    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation when
+    the first step of presentation is visible for a couple of seconds.
+    
+    ...
+    
+    And when it comes to this piece of JavaScript below ... kids, don't do this at home ;)
+    It's just a quick and dirty workaround to get different hint text for touch devices.
+    In a real world it should be at least placed in separate JS file ... and the touch content should be
+    probably just hidden somewhere in HTML - not hard-coded in the script.
+    
+    Just sayin' ;)
+    
+-->
+
+<!--
+    
+    Last, but not least.
+    
+    To make all described above really work, you need to include impress.js in the page.
+    I strongly encourage to minify it first.
+    
+    In here I just include full source of the script to make it more readable.
+    
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. Not only because it's a good practice, but also
+    because it should be done when the whole document is ready.
+    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
+    
+-->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+
+</body>
+</html>
+
+<!--
+    
+    Now you know more or less everything you need to build your first impress.js presentation, but before
+    you start...
+    
+    Oh, you've already cloned the code from GitHub?
+    
+    You have it open in text editor?
+    
+    Stop right there!
+    
+    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
+    first needs to grow in your mind.
+    
+    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
+    
+    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
+    to present. It will get you closer and closer to the layout you'll build later with impress.js.
+    
+    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
+    it earlier, because you'll only waste your time fighting with positioning of useless points.
+    
+    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
+    creating awesome and engaging presentations.
+    
+    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
+    
+-->
+
+<!--
+    
+    Are you still reading this?
+    
+    For real? I'm impressed! 
+    
+    But now, take my advice and take some time off. Make yourself a cup of coffee, tea,
+    or anything you like to drink.
+    
+    Cheers!
+    
+-->
+
